@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ulula_tracking>
+            <general>
+                <enabled>1</enabled>
+                <email_sender>general</email_sender>
+                <email_template>ulula_tracking_general_email_template</email_template>
+            </general>
+        </ulula_tracking>
+    </default>
+</config> 

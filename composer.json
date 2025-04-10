@@ -1,0 +1,41 @@
+{
+    "name": "ulula/module-tracking",
+    "description": "Módulo de Magento 2 que envía notificaciones por correo electrónico cuando un cliente ingresa al checkout",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": ">=102.0.0",
+        "magento/module-checkout": ">=100.4.0",
+        "magento/module-email": ">=101.1.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ulula\\Tracking\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Ulula",
+            "email": "info@ulula.com",
+            "homepage": "https://www.ulula.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "magento2",
+        "magento 2",
+        "checkout",
+        "email",
+        "notification",
+        "tracking"
+    ],
+    "support": {
+        "email": "support@ulula.com",
+        "issues": "https://github.com/ulula/module-tracking/issues"
+    }
+} 

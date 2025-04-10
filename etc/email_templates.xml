@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="ulula_tracking_general_email_template" label="Checkout Tracking Notification" file="checkout_notification.html" type="html" module="Ulula_Tracking" area="frontend"/>
+</config> 

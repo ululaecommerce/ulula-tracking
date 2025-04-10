@@ -1,0 +1,26 @@
+<!--@subject {{trans "Checkout Notification"}} @-->
+<!--@vars {
+"var customer_name":"Customer Name",
+"var customer_email":"Customer Email",
+"var store_name":"Store Name",
+"var store_url":"Store URL",
+"var date_time":"Date and Time"
+} @-->
+
+<div style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+    <p>{{trans "A customer has entered the checkout process."}}</p>
+    
+    <p>{{trans "Customer information:"}}</p>
+    <ul>
+        <li>{{trans "Name: %name" name=$customer_name}}</li>
+        <li>{{trans "Email: %email" email=$customer_email}}</li>
+    </ul>
+    
+    <p>{{trans "Details:"}}</p>
+    <ul>
+        <li>{{trans "Store: %store_name" store_name=$store_name}}</li>
+        <li>{{trans "Date and Time: %date_time" date_time=$date_time}}</li>
+    </ul>
+    
+    <p>{{trans "View the store here:"}} <a href="{{var store_url}}">{{var store_name}}</a></p>
+</div> 
