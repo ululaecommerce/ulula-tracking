@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulula Tracking - Notificaciones de Checkout para Magento 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .pricing-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .testimonial {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ulula Tracking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Ulula Tracking para Magento 2</h1>
+            <p class="lead mb-4">Notificaciones instantáneas cuando tus clientes entran al checkout</p>
+            <a href="#pricing" class="btn btn-light btn-lg">Comenzar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Características Principales</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-bell feature-icon"></i>
+                    <h3>Notificaciones Instantáneas</h3>
+                    <p>Recibe alertas por email cuando un cliente inicia el proceso de checkout.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-cog feature-icon"></i>
+                    <h3>Fácil Configuración</h3>
+                    <p>Configura el módulo en minutos desde el panel de administración de Magento.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-envelope feature-icon"></i>
+                    <h3>Plantillas Personalizables</h3>
+                    <p>Personaliza las plantillas de email según tus necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Planes y Precios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Básico</h3>
+                            <h4 class="card-price">$49.99</h4>
+                            <ul class="list-unstyled">
+                                <li>Notificaciones por email</li>
+                                <li>1 destinatario</li>
+                                <li>Soporte por email</li>
+                                <li>Actualizaciones por 1 año</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Profesional</h3>
+                            <h4 class="card-price">$99.99</h4>
+                            <ul class="list-unstyled">
+                                <li>Notificaciones por email</li>
+                                <li>Múltiples destinatarios</li>
+                                <li>Soporte prioritario</li>
+                                <li>Actualizaciones por 2 años</li>
+                                <li>Plantillas personalizadas</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Empresarial</h3>
+                            <h4 class="card-price">$199.99</h4>
+                            <ul class="list-unstyled">
+                                <li>Todas las características del plan Profesional</li>
+                                <li>Soporte 24/7</li>
+                                <li>Actualizaciones de por vida</li>
+                                <li>Desarrollo personalizado</li>
+                                <li>Integración con otros sistemas</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Ulula Tracking ha mejorado significativamente nuestro proceso de seguimiento de clientes. Las notificaciones instantáneas nos permiten actuar rápidamente."</p>
+                        <p class="fw-bold">- Juan Pérez, CEO de TiendaOnline</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"La facilidad de configuración y el soporte excepcional hacen que este módulo sea una excelente inversión para cualquier tienda Magento."</p>
+                        <p class="fw-bold">- María García, Directora de Marketing</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Hemos visto un aumento del 15% en nuestras conversiones desde que implementamos Ulula Tracking. ¡Altamente recomendado!"</p>
+                        <p class="fw-bold">- Carlos López, Gerente de E-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Ulula Tracking</h5>
+                    <p>Módulo de Magento 2 para notificaciones de checkout</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 Ulula Tracking. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
